@@ -1,4 +1,5 @@
 function reverseNumber(num) {
+  let a = num; // 525
   let rev = 0;
   let rem = 0;
   while (num != 0) {
@@ -7,10 +8,18 @@ function reverseNumber(num) {
     num = Math.floor(num / 10);
   }
   console.log(rev);
+  if (rev == a) {
+    console.log("Palindrome");
+  } else {
+    console.log("Not Palindrome");
+  }
 }
+
+// rev = 525
+// a = 525
 
 // File System
 // Web Server
-// 
+//
 
-reverseNumber(265);
+reverseNumber(45);
